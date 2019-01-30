@@ -10,10 +10,11 @@
 		697453252200924600F64F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697453242200924600F64F0C /* AppDelegate.swift */; };
 		697453272200924600F64F0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697453262200924600F64F0C /* ViewController.swift */; };
 		6974532A2200924600F64F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697453282200924600F64F0C /* Main.storyboard */; };
-		6974532C2200924800F64F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6974532B2200924800F64F0C /* Assets.xcassets */; };
 		6974532F2200924800F64F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6974532D2200924800F64F0C /* LaunchScreen.storyboard */; };
 		697453382200931B00F64F0C /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697453372200931B00F64F0C /* PlayingCard.swift */; };
 		6974533A2200999400F64F0C /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697453392200999400F64F0C /* PlayingCardDeck.swift */; };
+		69AB246022019DAE00CEA665 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AB245F22019DAE00CEA665 /* PlayingCardView.swift */; };
+		69AB24622201D76300CEA665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AB24612201D76300CEA665 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		697453242200924600F64F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		697453262200924600F64F0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		697453292200924600F64F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6974532B2200924800F64F0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6974532E2200924800F64F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697453302200924800F64F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697453372200931B00F64F0C /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		697453392200999400F64F0C /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		69AB245F22019DAE00CEA665 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		69AB24612201D76300CEA665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				697453262200924600F64F0C /* ViewController.swift */,
+				69AB245F22019DAE00CEA665 /* PlayingCardView.swift */,
 				697453372200931B00F64F0C /* PlayingCard.swift */,
 				697453392200999400F64F0C /* PlayingCardDeck.swift */,
 				697453282200924600F64F0C /* Main.storyboard */,
-				6974532B2200924800F64F0C /* Assets.xcassets */,
 				697453362200929800F64F0C /* Supporting Files */,
 				697453302200924800F64F0C /* Info.plist */,
+				69AB24612201D76300CEA665 /* Assets.xcassets */,
 			);
 			path = PlayingCard;
 			sourceTree = "<group>";
@@ -137,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6974532F2200924800F64F0C /* LaunchScreen.storyboard in Resources */,
-				6974532C2200924800F64F0C /* Assets.xcassets in Resources */,
+				69AB24622201D76300CEA665 /* Assets.xcassets in Resources */,
 				6974532A2200924600F64F0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +155,7 @@
 				697453272200924600F64F0C /* ViewController.swift in Sources */,
 				6974533A2200999400F64F0C /* PlayingCardDeck.swift in Sources */,
 				697453382200931B00F64F0C /* PlayingCard.swift in Sources */,
+				69AB246022019DAE00CEA665 /* PlayingCardView.swift in Sources */,
 				697453252200924600F64F0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
