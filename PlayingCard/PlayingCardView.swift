@@ -35,6 +35,20 @@ import UIKit
         }
     }
     
+    var faceCardScale: CGFloat = SizeRatio.faceCardImageSizeToBoundsSize {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
+    
+    @objc func adjustfFaceCardScale(byHandelingGestureReconizerBy reconizer: UIPinchGestureRecognizer) {
+        switch reconizer.state {
+        case .changed, .ended: faceCardScale *= reconizer.scale
+            reconizer.scale = 1.0
+        default: break
+        }
+    }
+    
     private func centeredAttributedString(_ string: String, fontSize: CGFloat) -> NSAttributedString {
         var font = UIFont.preferredFont(forTextStyle: .body).withSize(fontSize)
         font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
@@ -146,7 +160,7 @@ import UIKit
         
         if isFaceup {
             if let faceCardImage = UIImage(named: rankString + suit, in: Bundle(for: self.classForCoder), compatibleWith: traitCollection) {
-                faceCardImage.draw(in: bounds.zoom(by: SizeRatio.faceCardImageSizeToBoundsSize))
+                faceCardImage.draw(in: bounds.zoom(by: faceCardScale))
             } else {
                 drawPips()
             }
