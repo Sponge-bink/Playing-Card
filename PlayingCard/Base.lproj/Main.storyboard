@@ -26,9 +26,9 @@
                                     <constraint firstAttribute="width" priority="750" constant="800" id="InW-MN-q35"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceup" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFaceup" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rank">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
