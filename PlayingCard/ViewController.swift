@@ -83,12 +83,13 @@ class ViewController: UIViewController {
     @objc func flipCard(_ recognizer: UITapGestureRecognizer) {
         switch recognizer.state {
             case .ended:
-                if let choosenCardView = recognizer.view as? PlayingCardView {
+                if let chosenCardView = recognizer.view as? PlayingCardView {
+                    cardBehavior.removeItem(chosenCardView)
                     UIView.transition(
-                        with: choosenCardView,
+                        with: chosenCardView,
                         duration: 0.6,
                         options: [.transitionFlipFromLeft],
-                        animations: { choosenCardView.isFaceUp = !choosenCardView.isFaceUp },
+                        animations: { chosenCardView.isFaceUp = !chosenCardView.isFaceUp },
                         completion: { finished in
                             if self.faceUpCardViewsMatch {
                                 UIViewPropertyAnimator.runningPropertyAnimator(
@@ -128,8 +129,15 @@ class ViewController: UIViewController {
                                         with: cardView,
                                         duration: 0.6,
                                         options: [.transitionFlipFromLeft],
-                                        animations: { cardView.isFaceUp = false }
+                                        animations: { cardView.isFaceUp = false },
+                                        completion: { finished in
+                                            self.cardBehavior.addItem(cardView)
+                                        }
                                     )
+                                }
+                            } else {
+                                if !chosenCardView.isFaceUp {
+                                    self.cardBehavior.addItem(chosenCardView)
                                 }
                             }
                         }
