@@ -28,7 +28,7 @@ import UIKit
             setNeedsLayout()
         }
     }
-    @IBInspectable var isFaceup: Bool = false {
+    @IBInspectable var isFaceUp: Bool = false {
         didSet {
             setNeedsDisplay()
             setNeedsLayout()
@@ -75,7 +75,7 @@ import UIKit
         label.attributedText = cornerString
         label.frame.size = CGSize.zero
         label.sizeToFit()
-        label.isHidden = !isFaceup
+        label.isHidden = !isFaceUp
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -158,7 +158,7 @@ import UIKit
         UIColor.white.setFill()
         roundedRect.fill()
         
-        if isFaceup {
+        if isFaceUp {
             if let faceCardImage = UIImage(named: rankString + suit, in: Bundle(for: self.classForCoder), compatibleWith: traitCollection) {
                 faceCardImage.draw(in: bounds.zoom(by: faceCardScale))
             } else {
