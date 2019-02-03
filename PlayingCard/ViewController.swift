@@ -41,6 +41,10 @@ class ViewController: UIViewController {
     
     @IBOutlet private var cardViews: [PlayingCardView]!
     
+    lazy var animator = UIDynamicAnimator(referenceView: self.view)
+    
+    lazy var cardBehavior = CardBehavior(in: animator)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -62,6 +66,9 @@ class ViewController: UIViewController {
             cardView.suit = card.suit.rawValue
             
             cardView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(flipCard(_:))))
+//            collisionBehavior.addItem(cardView)
+//            itemBehavior.addItem(cardView)
+            cardBehavior.addItem(cardView)
         }
     }
     
