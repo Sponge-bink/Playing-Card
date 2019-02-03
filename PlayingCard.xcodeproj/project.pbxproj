@@ -60,12 +60,12 @@
 		697453232200924600F64F0C /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				698697412202F81E00E398AB /* Assets.xcassets */,
+				697453282200924600F64F0C /* Main.storyboard */,
 				697453262200924600F64F0C /* ViewController.swift */,
 				69AB245F22019DAE00CEA665 /* PlayingCardView.swift */,
 				697453372200931B00F64F0C /* PlayingCard.swift */,
 				697453392200999400F64F0C /* PlayingCardDeck.swift */,
-				697453282200924600F64F0C /* Main.storyboard */,
+				698697412202F81E00E398AB /* Assets.xcassets */,
 				697453362200929800F64F0C /* Supporting Files */,
 				697453302200924800F64F0C /* Info.plist */,
 			);
